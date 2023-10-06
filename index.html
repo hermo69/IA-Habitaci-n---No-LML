@@ -9,7 +9,7 @@
   <title>IA Habitación (No LML) - Pablo González Ceballos copy-2</title>
   <style>
     body {
-      color: #ffffff;
+      color: #fce94f;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
@@ -220,7 +220,7 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setUsername("Watermelon".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
       scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@IA Habitación (No LML) - Pablo González Ceballos copy-2.sb3"));
@@ -298,7 +298,7 @@
           }
         });
         const otherControlsExist = true;
-        const fillColor = otherControlsExist ? '#575E75' : '#ffffff';
+        const fillColor = otherControlsExist ? '#575E75' : '#fce94f';
         const updateFullScreen = () => {
           isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
           document.body.classList.toggle('is-fullscreen', isFullScreen);
@@ -401,7 +401,7 @@
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (false) {
+      if (true) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
